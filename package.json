@@ -2,7 +2,7 @@
   "name": "@haki-orm/mysql",
   "version": "1.0.2",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/src/index.d.ts",
   "type": "module",
   "files": [
     "dist",
