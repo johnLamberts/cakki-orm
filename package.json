@@ -1,0 +1,59 @@
+{
+  "name": "@haki/mysql-orm",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "test": "jest",
+    "perf": "ts-node src/tests/performance-suite.ts",
+    "test:performance:quick": "ts-node tests/performance-suite.ts --quick",    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "migrate:up": "ts-node src/cli/migrate.ts up",
+    "migrate:down": "ts-node src/cli/migrate.ts down",
+    "seed": "ts-node src/cli/seed.ts"
+  },
+  "keywords": [
+     "mysql",
+    "orm",
+    "typescript",
+    "database",
+    "sql",
+    "query-builder",
+    "active-record",
+    "repository",
+    "migrations",
+    "performance",
+    "type-safe"
+  ],
+  "author": "John Lambert P. Asis <asisjohnlambert5@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnLamberts/savy-orm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johnLamberts/savy-orm.git/issues"
+  },
+  "description": "",
+  "devDependencies": {
+    "@jest/globals": "^30.2.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mysql2": "^3.15.3"
+  }
+}
