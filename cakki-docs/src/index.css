@@ -1,0 +1,79 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Slate theme CSS variables */
+:root {
+  --slate-background: #f8fafc;
+  --slate-foreground: #0f172a;
+
+  --slate-primary: #0f172a;
+  --slate-primary-foreground: #f8fafc;
+
+  --slate-secondary: #e2e8f0;
+  --slate-secondary-foreground: #0f172a;
+
+  --slate-muted: #f1f5f9;
+  --slate-muted-foreground: #64748b;
+
+  --slate-accent: #3b82f6;
+  --slate-accent-foreground: #ffffff;
+
+  --slate-destructive: #ef4444;
+
+  --slate-border: #cbd5e1;
+  --slate-ring: #3b82f6;
+
+  --slate-card: #ffffff;
+  --slate-card-foreground: #0f172a;
+
+  --slate-popover: #ffffff;
+  --slate-popover-foreground: #0f172a;
+}
+
+/* Dark mode variant */
+.dark {
+  --slate-background: #0f172a;
+  --slate-foreground: #f8fafc;
+
+  --slate-primary: #f8fafc;
+  --slate-primary-foreground: #0f172a;
+
+  --slate-secondary: #1e293b;
+  --slate-secondary-foreground: #f8fafc;
+
+  --slate-muted: #334155;
+  --slate-muted-foreground: #cbd5e1;
+
+  --slate-accent: #3b82f6;
+  --slate-accent-foreground: #ffffff;
+
+  --slate-destructive: #ef4444;
+
+  --slate-border: #475569;
+  --slate-ring: #3b82f6;
+
+  --slate-card: #1e293b;
+  --slate-card-foreground: #f8fafc;
+
+  --slate-popover: #1e293b;
+  --slate-popover-foreground: #f8fafc;
+}
+
+/* Base layer for body and elements */
+@layer base {
+  body {
+    background-color: var(--slate-background);
+    color: var(--slate-foreground);
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  a {
+    color: var(--slate-accent);
+    text-decoration: none;
+  }
+  a:hover {
+    color: #2563eb;
+  }
+}
