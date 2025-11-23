@@ -13,7 +13,7 @@ export interface PostAttributes {
 }
 
 export class Post extends Model<PostAttributes> {
-  protected static _config: IModelConfig = {
+  protected static override _config: IModelConfig = {
     table: 'posts',
     primaryKey: 'id',
     timestamps: true,

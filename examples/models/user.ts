@@ -12,7 +12,7 @@ export interface UserAttributes {
 }
 
 export class User extends Model<UserAttributes> {
-  protected static _config: IModelConfig = {
+  protected static override _config: IModelConfig = {
     table: 'users',
     primaryKey: 'id',
     timestamps: true,

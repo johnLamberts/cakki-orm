@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 export class SchemaBuilder {
   private tableName: string;
   private columns: string[] = [];
-  private primaryKey?: string;
+  // @ts-ignore
+  private primaryKey!: string;
 
   constructor(table: string) {
     this.tableName = table;

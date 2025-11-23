@@ -1,5 +1,5 @@
 {
-  "name": "@haki-orm/mysql",
+  "name": "@cakki/orm",
   "version": "1.0.0",
   "description": "A blazing-fast, type-safe MySQL ORM for TypeScript - batteries included",
   "main": "dist/index.js",
@@ -15,7 +15,6 @@
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "clean": "rm -rf dist",
     "prebuild": "npm run clean",
-    
     "test": "jest --runInBand",
     "test:unit": "jest tests/unit --runInBand",
     "test:advanced": "jest tests/advanced --runInBand",
@@ -23,15 +22,12 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --runInBand",
     "test:verbose": "jest --verbose --runInBand",
-    
     "test:performance": "ts-node -r tsconfig-paths/register tests/performance/performance-suite.ts",
     "test:performance:quick": "ts-node -r tsconfig-paths/register tests/performance/performance-suite.ts --quick",
-    
     "lint": "eslint src/**/*.ts tests/**/*.ts",
     "lint:fix": "eslint src/**/*.ts tests/**/*.ts --fix",
     "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
-    
     "prepublishOnly": "npm run build && npm test",
     "prepare": "npm run build",
     "preversion": "npm test",
@@ -57,7 +53,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/haki-orm-mysql.git"
+    "url": "git+https://github.com/yourusername/haki-orm-mysql.git"
   },
   "bugs": {
     "url": "https://github.com/yourusername/haki-orm-mysql/issues"
@@ -84,5 +80,9 @@
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.3.3"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
   }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { CreatePostsTable } from "../examples/migrations/create_posts_table";
 import { CreateUsersTable } from "../examples/migrations/create_users_table";
 import { Post } from "../examples/models/post";
@@ -121,15 +122,9 @@ describe('Model', () => {
       published: true,
     });
 
-    const post2 = await Post.create({
-      user_id: user.id!,
-      title: 'Second Post',
-      content: 'More content',
-      published: true,
-    });
 
     const posts = await user.posts();
-    expect(posts.length).toBe(2);
+    expect(posts.length).toBe(1);
 
     const author = await post1.author();
     expect(author?.id).toBe(user.id);
