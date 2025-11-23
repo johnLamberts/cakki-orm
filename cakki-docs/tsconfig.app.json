@@ -32,8 +32,8 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
+    "src",
     "postcss.config.js",
     "tailwind.config.ts",
-    "src"
   ]
 }
