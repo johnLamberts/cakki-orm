@@ -2,7 +2,7 @@
 
 A lightweight, TypeScript-first ORM for Node.js built on MySQL. Inspired by Laravel's Eloquent and Mongoose, Haki ORM brings modern, intuitive database interactions to SQL while keeping your workflow simple and type-safe.
 
-### Why HakiORM?
+### Why Cakki ORM?
   - Works naturally with TypeScript types for safe queries
   - Provides am active record & repostiory pattern
   - Fluent query builder similar to NoSQL API (mongoose, firebase)
